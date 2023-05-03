@@ -18,8 +18,17 @@ const coffeeMenu = require("./coffee_menu_data");
 // Prompt 3:
 // Print an array of drinks that cost 5 and under.
 // Using .filter to get all drinks that cost 5 and under.
-const underFive = (item) => {
-  return item.price <= 50;
-};
-const itemUnderFive = coffeeMenu.filter(underFive);
-console.table(itemUnderFive);
+// const underFive = (item) => {
+//   return item.price <= 5;
+// };
+// const itemUnderFive = coffeeMenu.filter(underFive);
+// console.table(itemUnderFive);
+// Question for Jonathan: Why says: No debugger, cannot send 'variables
+// then it says: please a debug session to evaluate expresions.
+
+// Prompt 4:
+// Print an array of drinks that are priced at an even number.
+const evenNumber = (item) => {
+  return item.price;
+}
+const itemEvenNumber = coffeeMenu.filter(evenNumber);
