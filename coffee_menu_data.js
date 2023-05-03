@@ -15,7 +15,7 @@ const coffeeMenu = [
     seasonal: false,
   },
   {
-    name: affogato,
+    name: "affogato",
     price: 9,
     seasonal: true,
   },
@@ -25,7 +25,7 @@ const coffeeMenu = [
     seasonal: false,
   },
   {
-    name: americano,
+    name: "americano",
     price: 7,
     seasonal: false,
   },
@@ -35,7 +35,7 @@ const coffeeMenu = [
     seasonal: false,
   },
   {
-    name: frappe,
+    name: "frappe",
     price: 8,
     seasonal: false,
   },
