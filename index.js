@@ -29,6 +29,6 @@ const coffeeMenu = require("./coffee_menu_data");
 // Prompt 4:
 // Print an array of drinks that are priced at an even number.
 const evenNumber = (item) => {
-  return item.price;
-}
+  return item.evenPrice;
+};
 const itemEvenNumber = coffeeMenu.filter(evenNumber);
