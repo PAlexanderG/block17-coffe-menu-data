@@ -28,19 +28,17 @@ console.table(itemUnderFive);
 
 // Prompt 4:
 // Print an array of drinks that are priced at an even number.
-​
-// Prompt 4:
-// Print an array of drinks that are priced at an even number.
 // Using destructuring: ({price}) to extract the price property from the object
 // If statement and % operator to return prices with a remainder of 0(even)
 // using the filter() method to create a new array containing drinks with even prices
-console.log("All drinks with even prices");
+// console.log("All drinks with even prices");
+const getArray = ({ name }) => name;
 const isEven = ({ price }) => {
   if (price % 2 === 0) {
     return price;
   }
 };
-const evenPrice = coffeeMenu.filter(isEven).map(getName);
+const evenPrice = coffeeMenu.filter(isEven).map(getArray);
 console.log(evenPrice);
 
 //  Prompt 5:
@@ -54,7 +52,21 @@ console.log(totalCost);
 
 // Prompt 6:
 // Print an array with all the drinks that are seasonal.
+// using .filter method and a boolean === "seasonal"
 const arraySeasonal = coffeeMenu.filter(
   (object) => object.condition === "seasonal"
 );
 console.log(arraySeasonal);
+
+// Prompt 7:
+// Print all the seasonal drinks with the words "with imported beans" after the item name.
+// Example: "affogato with imported beans".
+// Use the forEach() method to call a printWithBeans function (array) on the elements.
+// Use console.log() and concatination to add "with imported beans" to the drink name.
+console.log("Seasonal drinks with imported beans");
+const printWithBeans = (drinks) => {
+  drinks.forEach((drink) => {
+    console.log(drink + " with imported beans");
+  });
+};
+printWithBeans(seasonalDrinks);
