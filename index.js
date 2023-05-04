@@ -2,14 +2,15 @@
 // Clean the coffee_data file: All prices should be numbers.
 // Checklist :All items should be strings.
 // Objects and properties should have commas separating them.
-// Connect the coffee_data.js file to the index.js file.
+
+// A property that connects the coffee_data.js file to the index.js file.
 // Module.exports to  export file forEach and module.exports
 // Export the all data: creating 2 diferent js files and use module.exports
-
 const coffeeMenu = require("./coffee_menu_data");
 
 // Prompt 2:
 // Using .map()to print an array of all the drinks on the menu.
+// Generates a new array by calling it on each member of the input array.
 const nameDrinks = (item) => {
   return item.name;
 };
@@ -18,6 +19,8 @@ console.log(coffeeMenu.map(nameDrinks));
 // Prompt 3:
 // Print an array of drinks that cost 5 and under.
 // Using .filter to get all drinks that cost 5 and under.
+// Method: .filter: creates a copy of part of an array & returns the
+// element that meet a specific condition.
 const underFive = (item) => {
   return item.price <= 5;
 };
@@ -43,7 +46,7 @@ console.log(evenPrice);
 
 //  Prompt 5:
 // Print the total if you were to order one of every drink.
-// Using .reduce method the sum of all objects = sum, object
+// Using .reduce method the sum of all objects = sum, object (accepts 2 parameters: index & arrays)
 // Return the sum of objects. price=number (sum + object.price)
 const totalCost = coffeeMenu.reduce((sum, object) => {
   return sum + object.price;
@@ -51,7 +54,7 @@ const totalCost = coffeeMenu.reduce((sum, object) => {
 console.log(totalCost);
 
 // Prompt 6:
-// Print an array with all the drinks that are seasonal.
+// Print an array with all the drinks that are seasonal array.
 // using .filter method and a boolean === "seasonal"
 const arraySeasonal = coffeeMenu.filter(
   (object) => object.condition === "seasonal"
@@ -61,7 +64,7 @@ console.log(arraySeasonal);
 // Prompt 7:
 // Print all the seasonal drinks with the words "with imported beans" after the item name.
 // Example: "affogato with imported beans".
-// Use the forEach() method to call a printWithBeans function (array) on the elements.
+// Use the forEach() method to call a printWithBeans function (array) on each of the elements.
 // Use console.log() and concatination to add "with imported beans" to the drink name.
 console.log("Seasonal drinks with imported beans");
 const printWithBeans = (drinks) => {
