@@ -28,7 +28,21 @@ const coffeeMenu = require("./coffee_menu_data");
 
 // Prompt 4:
 // Print an array of drinks that are priced at an even number.
-const evenNumber = (item) => {
-  return item.evenPrice;
-};
-const itemEvenNumber = coffeeMenu.filter(evenNumber);
+// const evenNumber = (item) => {
+//   return item.evenPrice;
+// };
+// const itemEvenNumber = coffeeMenu.filter(evenNumber);
+
+//  Prompt 5:
+// Print the total if you were to order one of every drink.
+const totalCost = coffeeMenu.reduce((sum, object) => {
+  return sum + object.price;
+}, 0);
+console.log(totalCost);
+
+// Prompt 6:
+// Print an array with all the drinks that are seasonal.
+const arraySeasonal = coffeeMenu.filter(
+  (object) => object.condition === "seasonal"
+);
+console.log(arraySeasonal);
