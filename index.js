@@ -64,7 +64,7 @@ console.log(arraySeasonal);
 // Prompt 7:
 // Print all the seasonal drinks with the words "with imported beans" after the item name.
 // Example: "affogato with imported beans".
-// Use the forEach() method to call a printWithBeans function (array) on each of the elements.
+// Use method forEach() method to call a printWithBeans function (array) on each of the elements.
 // Use console.log() and concatination to add "with imported beans" to the drink name.
 console.log("Seasonal drinks with imported beans");
 const printWithBeans = (drinks) => {
