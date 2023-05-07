@@ -66,15 +66,15 @@ console.log(arraySeasonal);
 // Example: "affogato with imported beans".
 // Use method forEach() method to call a printWithBeans function (array) on each of the elements.
 // Use console.log() and concatination to add "with imported beans" to the drink name.
-// console.log("Seasonal drinks with imported beans");
-// const printWithBeans = (drinks) => {
-//   drinks.forEach((drink) => {
-//     console.log(drink + " with imported beans");
-//   });
-// };
-// printWithBeans(arraySeasonal);
+console.log("Seasonal drinks with imported beans");
+const printWithBeans = (drinks) => {
+  drinks.forEach((drink) => {
+    console.log(drink + " with imported beans");
+  });
+};
+printWithBeans(arraySeasonal);
 
-// check coding with Jonathan
+check coding with Jonathan
 
 console.log(
   '7. Print all the seasonal drinks with the words "with imported beans" after the item name. For example: "affogato with imported beans".'
